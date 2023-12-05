@@ -1,0 +1,69 @@
+h1, h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.main-container {
+    background-color: rgb(224, 202, 245);
+    border: 1px solid rgb(224, 202, 245);
+    border-radius: 5px;
+    margin: 50px 400px;
+    padding: 20px 150px 70px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 0px 10px;
+    color: grey;
+    background-color:rgb(236, 170, 238);
+    padding: 15px;
+    border: 1px saddlebrown;
+    border-radius: 50px;
+}
+
+.button:hover {
+    color: white;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
+.about-container-1 {
+    background-color:red;
+    margin: 30px 40px 100px 530px;
+    padding: 45px 20px 20px 35px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 60px;
+}
+
+
+.about-container-2 {
+    margin: 30px 550px 100px 110px;
+    background-color: aqua;
+    padding: 45px 60px 90px 35px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.email-button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
