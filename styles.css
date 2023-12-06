@@ -1,59 +1,93 @@
-body {
-    background-color: black;
-}
-h1 {
-    color: purple;
+:root {
+    --primary-color: white;
+    --primary-color-2: #BC066F;
 }
 
 h2, h3 {
     text-align: center;
-    color: purple;
-}
-
-h5 {
-    color: purple;
-    align-items: center;
+    color: var(--primary-color);
 }
 
 a {
-    color: grey;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
+    color: var(--primary-color);
 }
 
 .main-container {
-    background-color: rgb(224, 202, 245);
-    border: 1px solid rgb(224, 202, 245);
-    border-radius: 5px;
-    margin: 50px 400px;
-    padding: 20px 150px 70px;
+    background-color: rgba(234, 153, 236, 0.2);
+    border: 1px solid rgba(234, 153, 236, 0.2);
+    border-radius: 50% 50% 50% 50% / 51% 49% 51% 49%;
+    margin: 40px 400px;
+    padding: 90px 40px;
+    
 }
 
-p {
-    color: purple;
+.main-container h1 {
+    text-align: center;
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    font-size: 45px;
+    margin-top: -5px;
+}
+
+.main-container span {
+    font-size: 35px;
+}
+
+.main-container button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .about {
     width: 100%;
     padding: 78px 0px;
-    background-color: black;
 }
 
 .about img {
     height: auto;
-    width: 420px;
-    border: 1px solid purple;
-    border-radius: 80px;
-    margin-right: 40px;
+    width: 380px;
+    border: 2px solid var(--primary-color-2);
+    border-radius: 0% 100% 74% 26% / 80% 48% 52% 20%;
+    margin: 50px 50px;
+    padding: 20px;
+    position: relative;
+    top: -60px;
 }
 
 .about-text {
     width: 550px;
+    margin-top: -35px;
 }
 
+.about-text h1 {
+    color: var(--primary-color);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-top: -12px;
+    margin-bottom: 0;
+}
+
+.about-text h5 {
+    color: rgb(206, 58, 83);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    color: pink;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
 .main {
     width: 1130px;
     max-width: 95%;
@@ -62,23 +96,61 @@ p {
     align-items: center;
     justify-content: space-around;
 }
-.button {
-    margin: 0px 10px;
-    color: grey;
-    background-color:rgb(236, 170, 238);
-    padding: 15px;
-    border: 1px saddlebrown;
-    border-radius: 50px;
+
+button {
+    background-color: var(--primary-color-2);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-top: 12px;
 }
 
-.button:hover {
-    color: white;
+button:hover {
+    background: transparent;
+    border: 2px solid var(--primary-color-2);
+    cursor: pointer;
 }
 
-.email-button {
-    display: block;
-    margin: 0 auto;
-    padding: 15px;
-    border: 1px solid grey;
-    border-radius: 50px;
+header {
+    width: 100%;
+    height: 60px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+li a {
+    position: relative;
+}
+
+li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #BC066F;
+    transform-origin: top right;
+    transition: transform 0.3s ease-out;
+}
+
+ii a:hover {
+    transform: scaleX(1);
+    transform-origin: bottom right;
 }
